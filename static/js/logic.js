@@ -1,87 +1,56 @@
-// Create a map object
-var myMap = L.map("map", {
-  center: [15.5994, -28.6731],
-  zoom: 3
+// We create the tile layer that will be the background of our map.
+let streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  id: 'mapbox/dark-v11',
+  maxZoom: 18,
+  tileSize: 512,
+  zoomOffset: -1,
+  accessToken: API_KEY
 });
 
-console.log("\u00A9 <h3>&copy;</h3>");
-// Adding tile layer
-L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
-  attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-  tileSize: 512,
+/*
+let streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
+  id: 'mapbox/streets-v11',
+  tileSize: 512,
   zoomOffset: -1,
-  id: "mapbox/streets-v11",
-  accessToken: API_KEY,
-}).addTo(myMap);
+  accessToken: API_KEY
+});
+*/
+// Then we add our 'streets' tile layer to the map.
+// Add a marker to the map for Los Angeles, CA
+// Create the map object with options
+var coord = Array(L.latLng(34.0522, -118.2437), L.latLng(38.575764, -121.478851), [33.835293, -117.914505]);
+var color = Array('red', 'orange', 'brown', 'blue', 'pink', 'yellow');
+let zoomCoord = L.latLng(coord[0]);
+//let zoomCoord = L.latLng(40.7, -94.5);
+let map = L.map('mapid').setView(zoomCoord, 10);
 
-// Country data
-var countries = [
-  {
-    name: "Brazil",
-    location: [-14.2350, -51.9253],
-    points: 237
-  },
-  {
-    name: "Germany",
-    location: [51.1657, 10.4515],
-    points: 221
-  },
-  {
-    name: "Italy",
-    location: [41.8719, 12.5675],
-    points: 156
-  },
-  {
-    name: "Argentina",
-    location: [-38.4161, -63.6167],
-    points: 144
-  },
-  {
-    name: "France",
-    location: [46.2276, 2.2137],
-    points: 115
-  },
-  {
-    name: "England",
-    location: [52.355, 1.1743],
-    points: 108
-  },
-  {
-    name: "Spain",
-    location: [40.4637, -3.7492],
-    points: 105
-  },
-  {
-    name: "Netherlands",
-    location: [52.1326, 5.2913],
-    points: 93
-  },
-  {
-    name: "Uruguay",
-    location: [-32.4228, -55.7658],
-    points: 84
-  },
-  {
-    name: "Sweden",
-    location: [60.1282, 18.6435],
-    points: 70
-  }
-];
-
-
-// Loop through the countries array
-for (var i = 0; i < countries.length; i++) {
-  L.circle(countries[i].location, {
-    fillColor: 'pink',
-    color: 'blue',
+streets.addTo(map);
+for (var i = 0; i < coord.length; i++) {
+  L.marker(coord[i]).addTo(map);
+  L.circleMarker(coord[i], {
+    radius: 300,
+    fillColor: '#ffa500',
+    color: 'cyan',
+  }).addTo(map);
+  L.circle(coord[i], {
     radius: 1000,
-    fillOpacity: 0.75
-  }).addTo(myMap);
+    fillColor: color[i+2],
+    color: color[i],
+    fillOpacity: 0.75,
+}).addTo(map);
 }
-  // Conditionals for countries points
 
-  // Add circles to map
-
-
-  // Adjust radius
+/* 
+  // Available mapbox api 
+  id: 'mapbox/streets-v12',
+  id: 'mapbox/outdoors-v12',
+  id: 'mapbox/light-v11',
+  id: 'mapbox/dark-v11',
+  id: 'mapbox/satellite-v9',
+  id: 'mapbox/satellite-streets-v12',
+  id: 'mapbox/navigation-day-v1',
+  id: 'mapbox/navigation-night-v1',
+*/
