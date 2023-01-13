@@ -86,7 +86,7 @@ const zoomCoord = L.latLng(44.0, -80.0);
 let map = L.map('mapid', {
   center: zoomCoord,
   zoom: 2,
-  layers: [light]
+  layers: [naviNight]
 });
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
@@ -107,6 +107,7 @@ let myStyle = {
 // Grabbing our GeoJSON data.
 d3.json(torontoData).then((data) => {
   // We turn each feature into a marker on the map.
+  console.log(data);
   L.geoJson(data).addTo(map);
 });
 */
@@ -125,6 +126,7 @@ d3.json(torontoData).then((data) => {
     }
   }).addTo(map);
 });
+
 /*
 // Grabbing our GeoJSON data.
 d3.json(airportData).then((data) => {
