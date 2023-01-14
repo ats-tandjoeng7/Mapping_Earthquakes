@@ -89,14 +89,6 @@ let map = L.map('mapid', {
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
-const githubName = "https://raw.githubusercontent.com/ats-tandjoeng7/";
-// Accessing the airport GeoJSON URL
-let airportData = githubName + "Mapping_Earthquakes/main/majorAirports.json";
-// Accessing the Toronto airline routes GeoJSON URL.
-let torontoData = githubName + "Mapping_Earthquakes/main/torontoRoutes.json";
-// Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = githubName + "Mapping_Earthquakes/main/torontoNeighborhoods.json";
-
 const quakeData = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
 // create a style for the lines
@@ -105,29 +97,6 @@ let myStyle = {
   fillOpacity: 1,
   weight: 2
 };
-
-// This function returns the style data for each of the earthquakes we plot on the map.
-// We pass the magnitude of the earthquake into a function to calculate the radius.
-function styleInfo(feature) {
-  return {
-    opacity: 1,
-    fillOpacity: 1,
-    fillColor: '#ffae42',
-    color: '#000000',
-    radius: getRadius(),
-    stroke: true,
-    weight: 0.5
-  };
-}
-
-// This function determines the radius of the earthquake marker based on its magnitude.
-// Earthquakes with a magnitude of 0 will be plotted with a radius of 1.
-function getRadius(magnitude) {
-  if (magnitude === 0) {
-    return 1;
-  }
-  return magnitude * 4;
-}
 
 // Grabbing our GeoJSON data.
 d3.json(quakeData).then((data) => {
@@ -163,7 +132,7 @@ d3.json(quakeData).then((data) => {
     },
     onEachFeature: function(feature, layer) {
       layer.bindPopup(`
-        <h2>Place: ${feature.properties.place}</h2><hr>
+        <h2>Location: ${feature.properties.place}</h2><hr>
         <h3>Magnitude: ${feature.properties.mag}</h3>
         <h3>Depth: ${feature.geometry.coordinates[2]} km</h3>
       `);
@@ -182,7 +151,7 @@ d3.json(quakeData).then((data) => {
 //    style: myStyle,
     onEachFeature: function(feature, layer) {
       layer.bindPopup(`
-        <h2>Place: ${feature.properties.place}</h2><hr>
+        <h2>Location: ${feature.properties.place}</h2><hr>
         <h3>Magnitude: ${feature.properties.mag}</h3>
         <h3>Depth: ${feature.geometry.coordinates[2]} km</h3>
       `);
