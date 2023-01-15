@@ -79,24 +79,55 @@ let baseMaps = {
   NavigationNight: naviNight
 };
 
+// Create the earthquake layer for our map.
+let earthquakes = new L.layerGroup();
+
+// We define an object that contains the overlays.
+// This overlay will be visible all the time.
+let overlays = {
+  Earthquakes: earthquakes
+};
+
 // Create the map object with center, zoom level and default layer.
 const zoomCoord = L.latLng(39.5, -98.5);
 let map = L.map('mapid', {
   center: zoomCoord,
   zoom: 3,
-  layers: [dark]
+  layers: [streets]
 });
-// Pass our map layers into our layers control and add the layers control to the map.
-L.control.layers(baseMaps).addTo(map);
+// Then we add a control to the map that will allow the user to change which layers are visible.
+L.control.layers(baseMaps, overlays).addTo(map);
 
-const quakeData = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
+// Create a legend control object.
+let legend = L.control({
+  position: 'bottomright'
+});
 
-// create a style for the lines
-let myStyle = {
-  fillColor: '#ffffa1',
-  fillOpacity: 1,
-  weight: 2
+// Identical colors for legend and magnitudes
+const colors = [
+  '#98ee00',
+  '#d4ee00',
+  '#eecc00',
+  '#ee9c00',
+  '#ea822c',
+  '#ea2c2c'
+];
+
+legend.onAdd = function(map) {
+  let div = L.DomUtil.create('div', 'info legend');
+  const magnitudes = [0, 1, 2, 3, 4, 5];
+  // Looping through our intervals to generate a label with a colored square for each interval.
+  for (var i = 0; i < magnitudes.length; i++) {
+    console.log(colors[i]);
+    div.innerHTML +=
+      "<i style='background: " + colors[i] + "'></i> " +
+      magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
+  }
+  return div;
 };
+legend.addTo(map);
+
+const quakeData = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson';
 
 // Grabbing our GeoJSON data.
 d3.json(quakeData).then((data) => {
@@ -125,23 +156,12 @@ d3.json(quakeData).then((data) => {
 
   // This function determines the color of the circle based on the magnitude of the earthquake.
   function getColor(magnitude) {
-    if (magnitude > 5) {
-      return '#ea2c2c';
-    }
-    if (magnitude > 4) {
-      return '#ea822c';
-    }
-    if (magnitude > 3) {
-      return '#ee9c00';
-    }
-    if (magnitude > 2) {
-      return '#eecc00';
-    }
-    if (magnitude > 1) {
-      return '#d4ee00';
+    let colorIdx = Math.floor(magnitude);
+    if (colorIdx <= 5) {
+      return colors[colorIdx];
     }
     else {
-      return '#98ee00';
+      return colors[5];
     }
   }
 
@@ -152,6 +172,8 @@ d3.json(quakeData).then((data) => {
       console.log(data);
       return L.circleMarker(latlng);
     },
+    // We set the style for each circleMarker using our styleInfo function.
+    style: styleInfo,
     // We create a popup for each circleMarker to display the magnitude and
     // location of the earthquake after the marker has been created and styled.
     onEachFeature: function(feature, layer) {
@@ -160,10 +182,10 @@ d3.json(quakeData).then((data) => {
         <h3>Location: ${feature.properties.place}</h3>
         <h3>Depth: ${feature.geometry.coordinates[2]} km</h3>
       `);
-    },
-    // We set the style for each circleMarker using our styleInfo function.
-    style: styleInfo
-  }).addTo(map);
+    }
+  }).addTo(earthquakes);
+  // Then we add the earthquake layer to our map
+  earthquakes.addTo(map);
 });
 
 /*
