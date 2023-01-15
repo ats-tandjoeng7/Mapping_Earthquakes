@@ -160,9 +160,7 @@ d3.json(quakeData).then((data) => {
     if (colorIdx <= 5) {
       return colors[colorIdx];
     }
-    else {
-      return colors[5];
-    }
+    return colors[5];
   }
 
   // creating a geoJSON layer with the retrieved data
