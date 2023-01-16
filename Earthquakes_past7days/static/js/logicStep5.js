@@ -156,11 +156,10 @@ d3.json(quakeData).then((data) => {
 
   // This function determines the color of the circle based on the magnitude of the earthquake.
   function getColor(magnitude) {
-    let colorIdx = Math.floor(magnitude);
-    if (colorIdx <= 5) {
-      return colors[colorIdx];
+    if (magnitude > 5) {
+      return colors[5];
     }
-    return colors[5];
+    return colors[Math.ceil(magnitude) - 1];
   }
 
   // creating a geoJSON layer with the retrieved data
