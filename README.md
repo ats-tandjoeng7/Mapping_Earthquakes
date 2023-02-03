@@ -7,21 +7,19 @@ This project focused on the application of web designing and visualization softw
   - [Challenge Overview](#challenge-overview)
   - [GitHub Repo Branches](#github-repo-branches)
 - [Web Designing and Analysis Results](#web-designing-and-analysis-results)
-  - [Customization and Optimization](#customization-and-optimization)
-  - [Deliverable 1](#deliverable-1)
-  - [Deliverable 2](#deliverable-2)
-  - [Deliverable 3](#deliverable-3)
-  - [Deliverable 4](#deliverable-4)
+  - [Deliverable 1: Add Tectonic Plate Data](#deliverable-1-add-tectonic-plate-data)
+  - [Deliverable 2: Add Major Earthquake Data](#deliverable-2-add-major-earthquake-data)
+  - [Deliverable 3: Add an Additional Map](#deliverable-3-add-an-additional-map)
 - [Summary](#summary)
 - [References](#references)
 
 ## Overview of Project
-This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for web mapping applications), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to deploy our webpage, perform in-depth analysis for mapping earthquakes and other maps.
+This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for mobile-friendly interactive maps), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to deploy our webpage, perform in-depth analysis for mapping earthquakes in relation to the tectonic plates' location on the earth, adding multiple overlay objects and other maps.
 
 ### Resources
 - Source code: logic.js, style.css, index.html
 - Image file: jpg/png files
-- Software: [Plotly JavaScript Open Source Graphing Library](https://plotly.com/javascript/), [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference), [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/), [Data-Driven Documents (D3)](https://d3js.org/), [GitHub](https://github.com/).
+- Software: [Leaflet](https://leafletjs.com/index.html), [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference), [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/), [Data-Driven Documents (D3)](https://d3js.org/), [GitHub](https://github.com/).
 
 ### Challenge Overview
 Outline of our deliverables and a written report for presenting our results and analysis summary:
@@ -29,7 +27,7 @@ Outline of our deliverables and a written report for presenting our results and 
 - ☑️ Deliverable 1: Add Tectonic Plate Data.
 - ☑️ Deliverable 2: Add Major Earthquake Data.
 - ☑️ Deliverable 3: Add an Additional Map.
-- ☑️ Summary: A summary on the Belly Button Biodiversity dashboard and integrated customizations (this ["README.md"](./README.md)).
+- ☑️ A Summary on how to create the earthquake map with multiple layers and maps (this ["README.md"](./README.md)).
 
 ### GitHub Repo Branches
 All deliverables in Module 14 challenge are committed in this GitHub repo as outlined below.  
