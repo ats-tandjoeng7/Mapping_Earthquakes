@@ -10,12 +10,21 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
                          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
                          crossorigin=""/>
+  <!-- d3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
   <link rel="shortcut icon" href="#">
+  <script>
+    function switchPage(myHtml) {
+      window.location.href = myHtml;
+    }
+  </script>
 </head>
 <body>
-
+  <div id="switch">
+    <input type="button" value="Return to index.html" onclick="switchPage('index5.html')" />
+  </div>
   <!-- The div where we will inject our map -->
   <div id="mapid"></div>
 
@@ -26,6 +35,7 @@
   <!-- API key -->
   <script src="static/js/config.js"></script>
   <!-- JS -->
-  <script src="static/js/logic_v1.js"></script>
+  <script src="static/js/cities.js"></script>
+  <script src="static/js/logicStep1.js"></script>
 </body>
 </html>

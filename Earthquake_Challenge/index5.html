@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="UCB-VIRT-DATA-ANALYTICS Module 14, Parto Tandjoeng">
+  <meta name="author" content="UCB-VIRT-DATA-ANALYTICS Module 14, Parto T.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-  <title>Leaflet-Mapping-Eartquakes-Map</title>
+  <title>Leaflet-Basic-Map</title>
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
                          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -15,8 +15,21 @@
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
   <link rel="shortcut icon" href="#">
+  <script>
+    function switchPage(myHtml) {
+      window.location.href = myHtml;
+    }
+  </script>
 </head>
 <body>
+  <div id="switch">
+    <input type="button" value="index.html (Main Page)" onclick="switchPage('index5.html')" />
+    <input type="button" value="index4.html" onclick="switchPage('index4.html')" />
+    <input type="button" value="index3.html" onclick="switchPage('index3.html')" />
+    <input type="button" value="index2.html" onclick="switchPage('index2.html')" />
+    <input type="button" value="index1.html" onclick="switchPage('index1.html')" />
+    <input type="button" value="index0.html" onclick="switchPage('index0.html')" />
+  </div>
   <!-- The div where we will inject our map -->
   <div id="mapid"></div>
 
@@ -27,6 +40,14 @@
   <!-- API key -->
   <script src="static/js/config.js"></script>
   <!-- JS -->
+  <script src="static/js/cities.js"></script>
+  <!--
+  <script src="static/js/logic.js"></script>
+  <script src="static/js/logicStep1.js"></script>
+  <script src="static/js/logicStep2.js"></script>
+  <script src="static/js/logicStep3.js"></script>
+  <script src="static/js/logicStep4.js"></script>
+  -->
   <script src="static/js/challenge_logic.js"></script>
 </body>
 </html>

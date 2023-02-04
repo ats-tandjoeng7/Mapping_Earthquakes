@@ -133,9 +133,3 @@ dmypy.json
 # Adding config.py file
 config.py
 config.js
-API_practice.ipynb
-WeatherPy.ipynb
-VacationPy.ipynb
-Weather_Database.ipynb
-Vacation_Search.ipynb
-Vacation_Itinerary.ipynb

@@ -26,7 +26,7 @@ let dark = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?
 
 // Create a base layer that holds both maps.
 let baseMaps = {
-  Street: streets,
+  Streets: streets,
   Dark: dark
 };
 // Create the map object with center at the San Francisco airport.

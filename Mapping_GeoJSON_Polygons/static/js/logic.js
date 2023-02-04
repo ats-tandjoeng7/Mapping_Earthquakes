@@ -68,8 +68,8 @@ let naviNight = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
 
 // Create a base layer that holds both maps.
 let baseMaps = {
-  Street: streets,
-  Outdoor: outdoors,
+  Streets: streets,
+  Outdoors: outdoors,
   Light: light,
   Dark: dark,
   Satellite: sat,

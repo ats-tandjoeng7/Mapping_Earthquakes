@@ -17,7 +17,8 @@ This project focused on the application of web designing and visualization softw
 This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for mobile-friendly interactive maps), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to deploy our webpage, perform in-depth analysis for mapping earthquakes in relation to the tectonic plates' location on the earth, adding multiple overlay objects and other maps.
 
 ### Resources
-- Source code: logic.js, style.css, index.html
+- Source code: challenge_logic.js, style.css, index.html
+- Source data: [](), [GeoJSON/PB2002_boundaries.json](https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json)
 - Image file: jpg/png files
 - Software: [Leaflet](https://leafletjs.com/index.html), [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference), [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/), [Data-Driven Documents (D3)](https://d3js.org/), [GitHub](https://github.com/).
 
@@ -90,12 +91,13 @@ The customized webpage has all the required specifications and added enhancement
 All deliverables have been designed and developed according to the assignment requirements, including well optimized functionality, better usability, mobile-responsive design, deployment and validation of some improvement features, and effortless analysis interface. I hope users will be able to experience the enhanced features when using our <a href="https://ats-tandjoeng7.github.io/plotlydeploy/" target="_blank">Belly Button Biodiversity webpage</a> and leave the webpage with good impression.
 
 ## References
-[Plotly JavaScript Open Source Graphing Library](https://plotly.com/javascript/)\
-[HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)\
-[CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS)\
-[JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)\
-[Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/)\
-[Data-Driven Documents (D3)](https://d3js.org/)\
-[d3-drag](https://github.com/d3/d3-drag/blob/main/README.md#drag_on)\
-[Colorscales in JavaScript](https://plotly.com/javascript/colorscales/#earth-colorscale)\
-[Responsive / Fluid Layouts in JavaScript](https://plotly.com/javascript/responsive-fluid-layout/)
+[Plotly JavaScript Open Source Graphing Library](https://plotly.com/javascript/)  
+[HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+[CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS)  
+[JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)  
+[Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/)  
+[Data-Driven Documents (D3)](https://d3js.org/)  
+[d3-drag](https://github.com/d3/d3-drag/blob/main/README.md#drag_on)  
+[Colorscales in JavaScript](https://plotly.com/javascript/colorscales/#earth-colorscale)  
+[Responsive / Fluid Layouts in JavaScript](https://plotly.com/javascript/responsive-fluid-layout/)  
+[Mapbox Styles API](https://docs.mapbox.com/api/maps/styles/)  
