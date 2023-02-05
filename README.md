@@ -5,7 +5,6 @@ This project focused on the application of web designing and visualization softw
 - [Overview of Project](#overview-of-project)
   - [Resources](#resources)
   - [Challenge Overview](#challenge-overview)
-  - [GitHub Repo Branches](#github-repo-branches)
 - [Web Designing and Analysis Results](#web-designing-and-analysis-results)
   - [Deliverable 1: Add Tectonic Plate Data](#deliverable-1-add-tectonic-plate-data)
   - [Deliverable 2: Add Major Earthquake Data](#deliverable-2-add-major-earthquake-data)
@@ -14,13 +13,13 @@ This project focused on the application of web designing and visualization softw
 - [References](#references)
 
 ## Overview of Project
-This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for mobile-friendly interactive maps), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to deploy our webpage, perform in-depth analysis for mapping earthquakes in relation to the tectonic plates' location on the earth, adding multiple overlay objects and other maps.
+This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for mobile-friendly interactive maps), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to our webpage, perform in-depth analysis for mapping earthquakes in relation to the Earth's tectonic plates, adding multiple overlay objects, and adding other map elements.
 
 ### Resources
-- Source code: challenge_logic.js, style.css, index.html
-- Source data: [](), [GeoJSON/PB2002_boundaries.json](https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json)
+- Source code: [challenge_logic.js](./Earthquake_Challenge/static/js/challenge_logic.js), [style.css](./Earthquake_Challenge/static/css/style.css), [index.html](./Earthquake_Challenge/index.html).
+- Source data: [USGS Past 7 Days All Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson), [USGS Past 7 Days M4.5+ Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson), [GeoJSON/PB2002_boundaries.json](https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json).
 - Image file: jpg/png files
-- Software: [Leaflet](https://leafletjs.com/index.html), [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference), [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/), [Data-Driven Documents (D3)](https://d3js.org/), [GitHub](https://github.com/).
+- Software: [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference), [Leaflet](https://leafletjs.com/index.html), [Mapbox Styles API](https://docs.mapbox.com/api/maps/styles/), [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/), [Data-Driven Documents (D3)](https://d3js.org/).
 
 ### Challenge Overview
 Outline of our deliverables and a written report for presenting our results and analysis summary:
@@ -30,74 +29,49 @@ Outline of our deliverables and a written report for presenting our results and 
 - ☑️ Deliverable 3: Add an Additional Map.
 - ☑️ A Summary on how to create the earthquake map with multiple layers and maps (this ["README.md"](./README.md)).
 
-### GitHub Repo Branches
-All deliverables in Module 14 challenge are committed in this GitHub repo as outlined below.  
-
-main branch  
-|&rarr; [./README.md](./README.md)  
-|&rarr; [./index.html](./index.html)  
-|&rarr; ./static/  
-  &nbsp; |&rarr; ./static/js/  
-    &emsp; |&rarr; [./static/js/charts.js](./static/js/logic.js)  
-  &nbsp; |&rarr; ./static/css/  
-    &emsp; |&rarr; [./static/css/style.css](./static/css/style.css)  
-  &nbsp; |&rarr; ./static/images/  
-    &emsp; |&rarr; [./static/images/bubbleplot_id946.jpg](./static/images/bubbleplot_id946.jpg)  
-    &emsp; |&rarr; [./static/images/plotlydeploy_webpage.png](./static/images/plotlydeploy_webpage.png)  
-    &emsp; |&rarr; [./static/images/barplot_id940.png](./static/images/barplot_id940.png)  
-    &emsp; |&rarr; [./static/images/gaugeplot_id940.png](./static/images/gaugeplot_id940.png)  
-    &emsp; |&rarr; [./static/images/bubbleplot_id940.png](./static/images/bubbleplot_id940.png)  
-
 ## Web Designing and Analysis Results
-By using several web designing tools, such as HTML, CSS, JavaScript, Plotly, and Chrome DevTools, we were able to design and integrate a visualization dashboard that lets users explore the Belly Button Biodiversity databases. We have incorporated some best practices when designing a website, which include enhanced user-friendly filtering functionality, good usability, user experience, and mobile-responsive layout. We then deployed our refactored webpage, performed test runs, and analyzed the results. Our webpage allows volunteers and users to easily visualize some useful dashboards, filter a list of data, and extract certain information based on volunteer's ID.
+By using several web designing tools, such as HTML, CSS, JavaScript, Leaflet, Mapbox Maps, and Chrome DevTools, we were able to design and integrate maps for visualizing earthquakes that lets users explore the earthquake databases from U.S. Geological Survey (USGS)). We have incorporated some best practices when designing a website, which include enhanced user-friendly overlay selections, various map backgrounds, and map legend, good usability and user experience.
 
 ### Customization and Optimization
-The refactored source code and screenshots of our webpage can be referred in [index.html](./index.html), [charts.js](./static/js/charts.js), [add_p.js](./static/js/add_p.js), and Fig. 1&ndash;4. We applied customized CSS styles by directly linked to [style.css](./static/css/style.css) in addition to `bootstrap.min.css` and `d3.js` for enabling several useful features, better user experience, and dynamic event listeners, for instance:
+The refactored JS code and screenshots of our webpage can be referred in [challenge_logic.js](./Earthquake_Challenge/static/js/challenge_logic.js) and Fig. 1&ndash;4. Some optimized settings, simplified variable definitions, and efficient functions that I used for mapping earthquakes efficiently are summarized below.
 
-- User experience was enhanced by adding a background image that can be temporarily hidden, eye-friendly background colors and recommended color contrasts.
-- Descriptive information about the project and each dashboard on the webpage. I wrote [add_p.js](./static/js/add_p.js) script to accomplish this instead of hard coding into the static html elements.
-- Mobile-responsive layout and design is integrated. The graphs that we generated by using Plotly JavaScript were also reconstructed for both desktop and mobile device users, and I also added a "Return to Top" icon for mobile device users.
-- User-friendly navigation, tap/mouse hover, and highlighting features. The improved features allowed volunteers and users to easily jump to a certain part of the webpage and notice which webpage content section they are currently on.
-- Title attributes were added to display "Belly Button Biodiversity Home" and brief link information when users hover their mouse over each link on the navigation bar. This could be useful when users use the keyboard \<F11\> key to view our webpage in full screen mode.
-- Link to the completed webpage: <a href="https://ats-tandjoeng7.github.io/plotlydeploy/" target="_blank">Belly Button Biodiversity webpage</a>.
+- common color settings and ternary operators for both legend and marker based on magnitude were used instead of setting them manually, which saved at least 10 lines of coding while maintaining our high quality deliverables.
+- retrieving [USGS Past 30 Days All Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson) and [USGS Past 30 Days M4.5+ Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson) would let better understanding of where most earthquakes, especially those M4.5+ earthquakes occur. 
+- all background maps were selectable in addition to `Streets`, `Satellite Streets`, or `Dark`.
 
-Fig. 1 outlined the design and layout of our webpage, which consisted of a horizontal navigation bar at the top followed by a header section with descriptive information about the Belly Button Biodiversity Dashboard, webpage content section including the ID No. Selector, and a simple footer at the bottom of the page.
+Fig. 1 outlines the design and layout of our webpage, which includes selectable layers, overlays, and a static legend with color scales representing the magnitude scales.
 
-![Fig. 1](./static/images/plotlydeploy_webpage.png 'Fig. 1 Belly Button Biodiversity homepage')\
-**Fig. 1 Belly Button Biodiversity homepage**
+![Fig. 1](./Earthquake_Challenge/static/images/Mapping_Earthquakes_webpage.png)  
+**Fig. 1 Mapping Earthquake webpage.**
 
-### Deliverable 1
-The interactive horizontal bar chart dashboard sorted according to the requirements is shown in Fig. 2.
+### Deliverable 1: Add Tectonic Plate Data
+Several map layers and two overlays (`Tectonic Plates` and `Earthquakes`) were added to the streets background map as illustrated in Fig. 2.
 
-![Fig. 2](./static/images/barplot_id940.png 'Fig. 2 Plotly Deploy Bar Chart dashboard')\
-**Fig. 2 Plotly Deploy Bar Chart dashboard**
+![Fig. 2](./Earthquake_Challenge/static/images/Mapping_Earthquakes_webpage_layers_overlays.png)  
+**Fig. 2 Mapping all earthquakes with selectable layers and overlays on the `Streets` background.**
 
-### Deliverable 2
-The interactive indicator gauge dashboard is shown in Fig. 3.
+### Deliverable 2: Add Major Earthquake Data
+Several map layers and two overlays (`Tectonic Plates`, `Earthquakes`, and `Major Earthquakes`) were added to the streets background map as illustrated in Fig. 3.
 
-![Fig. 3](./static/images/gaugeplot_id940.png 'Fig. 3 Plotly Deploy Indicator Gauge dashboard')\
-**Fig. 3 Plotly Deploy Indicator Gauge dashboard**
+![Fig. 3](./Earthquake_Challenge/static/images/Mapping_Earthquakes_webpage_layers_overlays_majorEQ.png)  
+**Fig. 3 Mapping major earthquakes with selectable layers and overlays on the `Streets` background.**
 
-### Deliverable 3
-The interactive bubble plot dashboard is shown in Fig. 4.
+### Deliverable 3: Add an Additional Map
+Several map layers and two overlays (`Tectonic Plates`, `Earthquakes`, and `Major Earthquakes`) were added to the dark background map as illustrated in Fig. 4.
 
-![Fig. 4](./static/images/bubbleplot_id940.png 'Fig. 4 Plotly Deploy Bubble Plot dashboard')\
-**Fig. 4 Plotly Deploy Bubble Plot dashboard**
-
-### Deliverable 4
-The customized webpage has all the required specifications and added enhancement features embedded as we have thoroughly discussed in the [Customization and Optimization](#customization-and-optimization) section.
+![Fig. 4](./Earthquake_Challenge/static/images/Mapping_Earthquakes_webpage_layers_overlays_dark.png)  
+**Fig. 4 Mapping all earthquakes with selectable layers and overlays on the `Dark` background.**
 
 ## Summary
-All deliverables have been designed and developed according to the assignment requirements, including well optimized functionality, better usability, mobile-responsive design, deployment and validation of some improvement features, and effortless analysis interface. I hope users will be able to experience the enhanced features when using our <a href="https://ats-tandjoeng7.github.io/plotlydeploy/" target="_blank">Belly Button Biodiversity webpage</a> and leave the webpage with good impression.
+All deliverables have been designed and developed according to the assignment requirements, including well optimized functionality, better usability, validation of some additional features, and effective code refactoring. Using [USGS Past 30 Days M4.5+ Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson) would let us better understand where most earthquakes occur. The overlay map in Fig. 3 reconfirms that most major earthquakes, especially those M4.5+ earthquakes, occur along the tectonic plates or the fault lines where tectonic plates meet, which had been scientifically reported in other studies (e.g. [USGS FAQs](https://www.usgs.gov/faqs/where-do-earthquakes-occur)).
 
 ## References
-[Plotly JavaScript Open Source Graphing Library](https://plotly.com/javascript/)  
 [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)  
 [CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS)  
 [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)  
+[Leaflet](https://leafletjs.com/index.html)  
+[Mapbox Styles API](https://docs.mapbox.com/api/maps/styles/)  
 [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/)  
 [Data-Driven Documents (D3)](https://d3js.org/)  
 [d3-drag](https://github.com/d3/d3-drag/blob/main/README.md#drag_on)  
 [Colorscales in JavaScript](https://plotly.com/javascript/colorscales/#earth-colorscale)  
-[Responsive / Fluid Layouts in JavaScript](https://plotly.com/javascript/responsive-fluid-layout/)  
-[Mapbox Styles API](https://docs.mapbox.com/api/maps/styles/)  
