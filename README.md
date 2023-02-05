@@ -13,13 +13,13 @@ This project focused on the application of web designing and visualization softw
 - [References](#references)
 
 ## Overview of Project
-This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for mobile-friendly interactive maps), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to our webpage, perform in-depth analysis for mapping earthquakes in relation to the Earth's tectonic plates, adding multiple overlay objects, and adding other map elements.
+This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for mobile-friendly interactive maps), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to our webpage, perform in-depth analysis for mapping earthquakes in relation to the Earth's tectonic plates, adding multiple overlay objects, and adding other map elements. We have also learned how to implement the GitHub flow that allows us collaborate on projects.
 
 ### Resources
 - Source code: [challenge_logic.js](./Earthquake_Challenge/static/js/challenge_logic.js), [style.css](./Earthquake_Challenge/static/css/style.css), [index.html](./Earthquake_Challenge/index.html).
 - Source data: [USGS Past 7 Days All Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson), [USGS Past 7 Days M4.5+ Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson), [GeoJSON/PB2002_boundaries.json](https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json).
 - Image file: jpg/png files
-- Software: [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference), [Leaflet](https://leafletjs.com/index.html), [Mapbox Styles API](https://docs.mapbox.com/api/maps/styles/), [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/), [Data-Driven Documents (D3)](https://d3js.org/).
+- Software: [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS: Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference), [Leaflet](https://leafletjs.com/index.html), [Mapbox Styles API](https://docs.mapbox.com/api/maps/styles/), [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/), [Data-Driven Documents (D3)](https://d3js.org/), [GitHub](https://github.com/).
 
 ### Challenge Overview
 Outline of our deliverables and a written report for presenting our results and analysis summary:
@@ -95,3 +95,4 @@ All deliverables have been designed and developed according to the assignment re
 [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/)  
 [Data-Driven Documents (D3)](https://d3js.org/)  
 [HTML HEX Colors](https://www.w3schools.com/html/html_colors_hex.asp)  
+[GitHub Docs - GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)  
