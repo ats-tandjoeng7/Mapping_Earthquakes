@@ -5,7 +5,7 @@ This project focused on the application of web designing and visualization softw
 - [Overview of Project](#overview-of-project)
   - [Resources](#resources)
   - [Challenge Overview](#challenge-overview)
-- [Web Designing and Analysis Results](#web-designing-and-analysis-results)
+- [Web Designing, Customization, and Analysis Results](#web-designing-customization-and-analysis-results)
   - [Deliverable 1: Add Tectonic Plate Data](#deliverable-1-add-tectonic-plate-data)
   - [Deliverable 2: Add Major Earthquake Data](#deliverable-2-add-major-earthquake-data)
   - [Deliverable 3: Add an Additional Map](#deliverable-3-add-an-additional-map)
@@ -29,14 +29,35 @@ Outline of our deliverables and a written report for presenting our results and 
 - ☑️ Deliverable 3: Add an Additional Map.
 - ☑️ A Summary on how to create the earthquake map with multiple layers and maps (this ["README.md"](./README.md)).
 
-## Web Designing and Analysis Results
+## Web Designing, Customization, and Analysis Results
 By using several web designing tools, such as HTML, CSS, JavaScript, Leaflet, Mapbox Maps, and Chrome DevTools, we were able to design and integrate maps for visualizing earthquakes that lets users explore the earthquake databases from U.S. Geological Survey (USGS)). We have incorporated some best practices when designing a website, which include enhanced user-friendly overlay selections, various map backgrounds, and map legend, good usability and user experience.
 
 ### Customization and Optimization
 The refactored JS code and screenshots of our webpage can be referred in [challenge_logic.js](./Earthquake_Challenge/static/js/challenge_logic.js) and Fig. 1&ndash;4. Some optimized settings, simplified variable definitions, and efficient functions that I used for mapping earthquakes efficiently are summarized below.
 
-- common color settings and ternary operators for both legend and marker based on magnitude were used instead of setting them manually, which saved at least 10 lines of coding while maintaining our high quality deliverables.
-- retrieving [USGS Past 30 Days All Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson) and [USGS Past 30 Days M4.5+ Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson) would let better understanding of where most earthquakes, especially those M4.5+ earthquakes occur. 
+- common color settings and ternary operators for both legend and marker based on magnitude were used instead of setting them manually, which saved at least 10 lines of coding while maintaining our high quality deliverables, for instance:
+
+  ```
+  // Set common color settings for both legend and marker based on magnitude
+  const colors = [
+    '#98ee00',
+    '#d4ee00',
+    '#eecc00',
+    '#ee9c00',
+    '#ea822c',
+    '#ea2c2c'
+  ];
+  ```
+
+  ```
+    // This function determines the color of the marker based on the magnitude of the M4.5+ earthquakes
+    function getColor(magnitude) {
+      idx = magnitude > 6 ? 5 : (Math.ceil(magnitude) - 2);
+      return colors[idx];
+    }
+  ```
+
+- retrieving [USGS Past 30 Days All Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson) and [USGS Past 30 Days M4.5+ Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson) would let better understanding of where most earthquakes occur. The data let us observe a clear relationship between the locations of earthquakes, especially those M4.5+ earthquakes, and the Earth's tectonic plates.
 - all background maps were selectable in addition to `Streets`, `Satellite Streets`, or `Dark`.
 
 Fig. 1 outlines the design and layout of our webpage, which includes selectable layers, overlays, and a static legend with color scales representing the magnitude scales.
@@ -73,5 +94,4 @@ All deliverables have been designed and developed according to the assignment re
 [Mapbox Styles API](https://docs.mapbox.com/api/maps/styles/)  
 [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview/)  
 [Data-Driven Documents (D3)](https://d3js.org/)  
-[d3-drag](https://github.com/d3/d3-drag/blob/main/README.md#drag_on)  
-[Colorscales in JavaScript](https://plotly.com/javascript/colorscales/#earth-colorscale)  
+[HTML HEX Colors](https://www.w3schools.com/html/html_colors_hex.asp)  

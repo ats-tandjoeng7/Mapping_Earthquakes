@@ -177,8 +177,7 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geo
     };
   }
 
-  // This function determines the color of the marker based on the magnitude of the earthquake,
-  // and the correct color index for earthquakes with 0 or negative magnitudes.
+  // This function determines the color of the marker based on the magnitude of the M4.5+ earthquakes
   function getColor(magnitude) {
     idx = magnitude > 6 ? 5 : (Math.ceil(magnitude) - 2);
     return colors[idx];
