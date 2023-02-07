@@ -100,7 +100,7 @@ All deliverables have been designed and developed according to the assignment re
 
 ### Future Work
 
-All earthquakes and all major M4.5+ earthquakes occuring in the past 7-days can also be added in addition to `Tectonic Plates`, `Earthquakes`, and `Major Earthquakes` overlays. `Earthquakes Past 7-Days` and `M4.5+ Past 7-Days` overlays are currently disabled by default unless users enable them after loading the webpage. Fig. 5 shows when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on the streets background map. The map accurately captured the heartbreaking earthquake that recently struck Turkey.
+All earthquakes and all major M4.5+ earthquakes occurring in the past 7-days can also be added in addition to `Tectonic Plates`, `Earthquakes`, and `Major Earthquakes` overlays. `Earthquakes Past 7-Days` and `M4.5+ Past 7-Days` overlays are currently disabled by default unless users enable them after loading the webpage. Fig. 5 shows when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on the streets background map. The map accurately captured the heartbreaking earthquake that recently struck Turkey.
 
 ![Fig. 5](./Earthquake_Challenge/static/images/Mapping_Earthquakes_webpage_layers_overlays_majorEQ_Past7Days.png)  
 **Fig. 5 Mapping major earthquakes that were recorded in the past 7 days and displayed on the `Streets` background.**
