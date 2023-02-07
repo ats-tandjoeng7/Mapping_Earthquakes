@@ -79,14 +79,18 @@ let baseMaps = {
 
 // 1. Add multiple layer groups for the earthquake, tectonic plate, major earthquake data.
 let allEQ = new L.layerGroup();
+let allEQ7Days = new L.layerGroup();
 let tectonicPlates = new L.layerGroup();
 let majorEQ = new L.layerGroup();
+let majorEQ7Days = new L.layerGroup();
 
 // 2. Add a reference to the tectonic plates group to the overlays object.
 let overlays = {
   "Tectonic Plates": tectonicPlates,
   "Earthquakes": allEQ,
-  "Major Earthquakes": majorEQ
+  "Major Earthquakes": majorEQ,
+  "Earthquakes Past 7-Days": allEQ7Days,
+  "M4.5+ Past 7-Days": majorEQ7Days
 };
 
 // Then we add a control to the map that will allow the user to change which layers are visible.
@@ -161,7 +165,6 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geo
 });
 
 // 3. Retrieve the major earthquake GeoJSON data >4.5 mag for the week (use data for the month instead).
-//d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson').then((data) => {
 d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson').then((data) => {
   // This function returns the style data for each of the earthquakes we plot on the map.
   // We pass the magnitude of the earthquake into two functions to calculate the color and radius.
@@ -205,13 +208,124 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geo
     // location of the earthquake after the marker has been created and styled.
     onEachFeature: function(feature, layer) {
       layer.bindPopup(
-        "Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place + "<br>Depth: " + feature.geometry.coordinates[2] + " km"
+        "Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place + "<br>Depth: " + feature.geometry.coordinates[2] + " km" +
+        "<br>Date: " + new Date(feature.properties.time).toISOString().substring(0, 19)
       );
     }
   }).addTo(majorEQ);
 
   // Then we add the earthquake layer to our map.
   majorEQ.addTo(map);
+});
+
+d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson').then((data) => {
+  // This function returns the style data for each of the earthquakes we plot on the map.
+  // We pass the magnitude of the earthquake into two functions to calculate the color and radius.
+  function styleInfo(feature) {
+    return {
+      opacity: 1,
+      fillOpacity: 1,
+      fillColor: getColor(feature.properties.mag),
+      color: '#000000',
+      radius: getRadius(feature.properties.mag),
+      stroke: true,
+      weight: 0.5
+    };
+  }
+
+  // This function determines the color of the marker based on the magnitude of the earthquake,
+  // and corrects color index for earthquakes with 0 or negative magnitudes.
+  function getColor(magnitude) {
+    if (magnitude > 5) {
+      return colors[5];
+    }
+    idx = magnitude <= 1 ? 0 : (Math.ceil(magnitude) - 1);
+    return colors[idx];
+  }
+
+  // This function determines the radius of the earthquake marker based on its magnitude.
+  // Earthquakes with a magnitude of 0 will be plotted with a radius of 1.
+  function getRadius(magnitude) {
+    if (magnitude === 0) {
+      return 1;
+    }
+    return magnitude * 4;
+  }
+
+  // creating a geoJSON layer with the retrieved data
+  L.geoJson(data, {
+	  // We turn each feature into a circleMarker on the map.
+    pointToLayer: function(feature, latlng) {
+      console.log(data);
+      return L.circleMarker(latlng);
+    },
+    // We set the style for each circleMarker using our styleInfo function.
+    style: styleInfo,
+    // We create a popup for each circleMarker to display the magnitude and
+    // location of the earthquake after the marker has been created and styled.
+    onEachFeature: function(feature, layer) {
+      layer.bindPopup(
+        "Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place + "<br>Depth: " + feature.geometry.coordinates[2] + " km"
+      );
+    }
+  }).addTo(allEQ7Days);
+
+  // Then we add the earthquake layer to our map.
+  map.removeLayer(allEQ7Days);
+});
+
+// 3. Retrieve the major earthquake GeoJSON data >4.5 mag for the week
+d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson').then((data) => {
+  // This function returns the style data for each of the earthquakes we plot on the map.
+  // We pass the magnitude of the earthquake into two functions to calculate the color and radius.
+  function styleInfo(feature) {
+    return {
+      opacity: 1,
+      fillOpacity: 1,
+      fillColor: getColor(feature.properties.mag),
+      color: '#000000',
+      radius: getRadius(feature.properties.mag),
+      stroke: true,
+      weight: 0.5
+    };
+  }
+
+  // This function determines the color of the marker based on the magnitude of the M4.5+ earthquakes
+  function getColor(magnitude) {
+    idx = magnitude > 6 ? 5 : (Math.ceil(magnitude) - 2);
+    return colors[idx];
+  }
+
+  // This function determines the radius of the earthquake marker based on its magnitude.
+  // Earthquakes with a magnitude of 0 will be plotted with a radius of 1.
+  function getRadius(magnitude) {
+    if (magnitude === 0) {
+      return 1;
+    }
+    return magnitude * 4;
+  }
+
+  // creating a geoJSON layer with the retrieved data
+  L.geoJson(data, {
+	  // We turn each feature into a circleMarker on the map.
+    pointToLayer: function(feature, latlng) {
+      console.log(data);
+      return L.circleMarker(latlng);
+    },
+    // We set the style for each circleMarker using our styleInfo function.
+    style: styleInfo,
+    // We create a popup for each circleMarker to display the magnitude and
+    // location of the earthquake after the marker has been created and styled.
+    onEachFeature: function(feature, layer) {
+      layer.bindPopup(
+        "Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place + "<br>Depth: " + feature.geometry.coordinates[2] + " km" +
+        "<br>Date: " + new Date(feature.properties.time).toISOString().substring(0, 19)
+      );
+    }
+  }).addTo(majorEQ7Days);
+
+  // Then we add the earthquake layer to our map.
+  map.removeLayer(majorEQ7Days);
 });
 
 // Create a legend control object.
