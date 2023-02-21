@@ -100,10 +100,18 @@ All deliverables have been designed and developed according to the assignment re
 
 ### Future Work
 
-All earthquakes and all major M4.5+ earthquakes occurring in the past 7-days can also be added in addition to `Tectonic Plates`, `Earthquakes`, and `Major Earthquakes` overlays. `Earthquakes Past 7-Days` and `M4.5+ Past 7-Days` overlays are currently disabled by default unless users enable them after loading the webpage. Fig. 5 shows when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on the streets background map. The map accurately captured the heartbreaking earthquake that recently struck Turkey.
+All earthquakes and all major M4.5+ earthquakes occurring in the past 7-days can also be added in addition to `Tectonic Plates`, `Earthquakes`, and `Major Earthquakes` overlays. `Earthquakes Past 7-Days` and `M4.5+ Past 7-Days` overlays are currently disabled by default unless users enable them after loading the webpage.
 
-![Fig. 5](./Earthquake_Challenge/static/images/Mapping_Earthquakes_webpage_layers_overlays_majorEQ_Past7Days.png)  
+![Fig. 5](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days20230207.png)  
 **Fig. 5 Mapping major earthquakes that were recorded in the past 7 days and displayed on the `Streets` background.**
+
+![Fig. 6](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days20230220.png)  
+**Fig. 6 Mapping major aftershocks that were recorded in the past 7 days and displayed on the `Satellite-Streets` background.**
+
+Fig. 5&ndash;6 illustrate when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on a specified background map.
+
+- Fig. 5 shows the heartbreaking devastating earthquake of M7.8 that recently struck Turkey on Feb 6, 2023 at 01:17:35 UTC.
+- Fig. 6 shows the devastating aftershock of M6.3 that subsequently struck southern Turkey on Feb 20, 2023 at 17:04:29 UTC.
 
 ## References
 
@@ -116,3 +124,4 @@ All earthquakes and all major M4.5+ earthquakes occurring in the past 7-days can
 [Data-Driven Documents (D3)](https://d3js.org/)  
 [HTML HEX Colors](https://www.w3schools.com/html/html_colors_hex.asp)  
 [GitHub Docs - GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)  
+[USGS FAQs](https://www.usgs.gov/faqs/where-do-earthquakes-occur)  
