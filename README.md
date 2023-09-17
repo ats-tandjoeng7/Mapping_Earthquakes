@@ -12,12 +12,14 @@ This project focused on the application of web designing and visualization softw
   - [Deliverable 2: Add Major Earthquake Data](#deliverable-2-add-major-earthquake-data)
   - [Deliverable 3: Add an Additional Map](#deliverable-3-add-an-additional-map)
 - [Summary](#summary)
-  - [Future Work](#future-work)
+- [Future Work](#future-work)
+  - [2023 Southern Turkey Earthquake](#2023-southern-turkey-earthquake)
+  - [2023 Western Morocco Earthquake](#2023-western-morocco-earthquake)
 - [References](#references)
 
 ## Overview of Project
 
-This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for mobile-friendly interactive maps), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to our webpage, perform in-depth analysis for mapping earthquakes in relation to the Earth's tectonic plates, adding multiple overlay objects, and adding other map elements. We have also learned how to implement the GitHub flow that allows us collaborate on projects.
+This project and Module 14 assignment focused on cultivating knowledge and skills of web designing and data analysis through some rigorous exercises for further understanding the concepts of integrating HyperText Markup Language (HTML), Cascading Style Sheet (CSS), JavaScript (JS), Leaflet (open source JS library for mobile-friendly interactive maps), and Mapbox (open source mapping libraries and applications) programs for building a dynamic and interactive webpage with optimized content, functionality, usability, and user experience. We then applied our knowledge and core skills to our webpage, perform in-depth analysis for mapping earthquakes in relation to the Earth's tectonic plates, adding multiple overlay objects, and adding other map elements. We have also learned how to implement the GitHub flow that allows us to collaborate on projects.
 
 ### Resources
 
@@ -37,7 +39,7 @@ Outline of our deliverables and a written report for presenting our results and 
 
 ## Web Designing, Customization, and Analysis Results
 
-By using several web designing tools, such as HTML, CSS, JavaScript, Leaflet, Mapbox Maps, and Chrome DevTools, we were able to design and integrate maps for visualizing earthquakes that lets users explore the earthquake databases from U.S. Geological Survey (USGS)). We have incorporated some best practices when designing a website, which include enhanced user-friendly overlay selections, various map backgrounds, and map legend, good usability and user experience.
+By using several web designing tools, such as HTML, CSS, JavaScript, Leaflet, Mapbox Maps, and Chrome DevTools, we were able to design and integrate maps for visualizing earthquakes that lets users explore the earthquake databases from U.S. Geological Survey (USGS)). We have incorporated some best practices when designing a website, which include enhanced user-friendly overlay selections, various map backgrounds, and map legend, good usability, and user experience.
 
 ### Customization and Optimization
 
@@ -98,9 +100,18 @@ Several map layers and two overlays (`Tectonic Plates`, `Earthquakes`, and `Majo
 
 All deliverables have been designed and developed according to the assignment requirements, including well optimized functionality, better usability, validation of some additional features, and effective code refactoring. Using [USGS Past 30 Days M4.5+ Earthquakes](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson) would let us better understand where most earthquakes occur. The overlay map in Fig. 3 reconfirms that most major earthquakes, especially those M4.5+ earthquakes, occur along the tectonic plates or the fault lines where tectonic plates meet, which had been scientifically reported in other studies (e.g. [USGS FAQs](https://www.usgs.gov/faqs/where-do-earthquakes-occur)).
 
-### Future Work
+## Future Work
 
 All earthquakes and all major M4.5+ earthquakes occurring in the past 7-days can also be added in addition to `Tectonic Plates`, `Earthquakes`, and `Major Earthquakes` overlays. `Earthquakes Past 7-Days` and `M4.5+ Past 7-Days` overlays are currently disabled by default unless users enable them after loading the webpage.
+
+### 2023 Southern Turkey Earthquake
+
+On February 6, 2023 (UTC) a major earthquake was recorded around the southern part of Turkey. The epicenter of the quake was about 26 km east of Nurdağı, Turkey, and the powerful and shallow quake severely devastated the southern areas of Turkey. More detailed information about the M7.8 earthquake that struck the southern areas of Turkey in early February 2023 can also be found in [USGS.gov news](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye).
+
+- Magnitude at the epicenter: **M7.8**
+- Location: about 26 km east of Nurdağı, **Turkey**
+- Depth of the epicenter: about **17.925 km**
+- Date/Time: February 6, 2023, around 01:17:35 UTC
 
 ![Fig. 5](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days20230207.png)  
 **Fig. 5 Mapping major earthquakes that were recorded in the past 7 days and displayed on the `Streets` background.**
@@ -110,8 +121,31 @@ All earthquakes and all major M4.5+ earthquakes occurring in the past 7-days can
 
 Fig. 5&ndash;6 illustrate when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on a specified background map.
 
-- Fig. 5 shows the heartbreaking devastating earthquake of M7.8 that recently struck Turkey on Feb 6, 2023 at 01:17:35 UTC.
-- Fig. 6 shows the devastating aftershock of M6.3 that subsequently struck southern Turkey on Feb 20, 2023 at 17:04:29 UTC.
+- Fig. 5 shows the heartbreaking and devastating earthquake of M7.8 that struck Turkey on February 6, 2023 at around 01:17:35 UTC.
+- Fig. 6 shows the devastating aftershock of M6.3 that subsequently struck the southern Turkey areas on February 20, 2023 at 17:04:29 UTC.
+
+### 2023 Western Morocco Earthquake
+
+On September 8, 2023 (UTC) another devastating earthquake was recorded around the western part of Morocco. The epicenter of the quake was about 18 km west/southwest of Oukaïmedene, Morocco. Although the magnitude scale of this M6.8 quake was not as bad as that of the southern Turkey earthquake, the strong and shallow quake again caused severe damage and death toll throughout the southwest region of Morocco. More detailed information about the M6.8 earthquake that hit the western/southwestern region of Morocco in early September 2023 can also be found in [USGS.gov news](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco).
+
+- Magnitude at the epicenter: **M6.8**
+- Location: about 54 km west/southwest of Oukaïmedene, **Morocco** (southwest of Marrakesh/Marrakech)
+- Depth of the epicenter: **about 18 km**
+- Date/Time: September 8, 2023, around 22:11:01 UTC
+
+![Fig. 7](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days20230915.png)  
+**Fig. 7 Mapping major earthquakes that were recorded in the past 7 days and displayed on the `Streets` background.**
+
+<hr>
+<table><tr><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days202309082211.png' title='(a) Epicenter of the M6.8 earthquake'></td><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days202309082230.png' title='(b) Aftershock of M4.9'></td><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days202309140553.png' title='(c) Aftershock of M4.6'></td></tr></table>
+
+**Fig. 8 From left to right: (a) Epicenter of the major M6.8 earthquake that struck the western part of Morocco, (b&ndash;c) Mapping major aftershocks of magnitude scale &gt; M4.5 that were recorded in the past 7 days and displayed on the `Satellite-Streets` background.**
+<hr>
+
+Fig. 7&ndash;8 illustrate when both `Tectonic Plates`, `Major Earthquakes`, `M4.5+ Past 7-Days` and `Earthquakes Past 7-Days` overlays were selected and displayed on a specified background map.
+
+- Fig. 7 shows the shallow and devastating earthquake of M6.8 that struck Morocco on September 8, 2023 at around 22:11:01 UTC.
+- Fig. 8 shows several aftershocks of magnitude scale &gt; M4.5 that subsequently rocked western/southwestern Morocco on Feb 8, 2023 at 22:30:42 UTC and Feb 14, 2023 at 05:53:16 UTC.
 
 ## References
 
@@ -125,3 +159,5 @@ Fig. 5&ndash;6 illustrate when both `Tectonic Plates` and `M4.5+ Past 7-Days` ov
 [HTML HEX Colors](https://www.w3schools.com/html/html_colors_hex.asp)  
 [GitHub Docs - GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)  
 [USGS FAQs](https://www.usgs.gov/faqs/where-do-earthquakes-occur)  
+[USGS.gov news](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye)  
+[USGS.gov news](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco)  
