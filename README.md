@@ -159,5 +159,5 @@ Fig. 7&ndash;8 illustrate when both `Tectonic Plates`, `Major Earthquakes`, `M4.
 [HTML HEX Colors](https://www.w3schools.com/html/html_colors_hex.asp)  
 [GitHub Docs - GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)  
 [USGS FAQs](https://www.usgs.gov/faqs/where-do-earthquakes-occur)  
-[USGS.gov news](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye)  
-[USGS.gov news](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco)  
+[USGS.gov featured story about Turkey earthquake](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye)  
+[USGS.gov featured story about Morocco earthquake](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco)  
