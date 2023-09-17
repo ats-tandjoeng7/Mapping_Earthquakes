@@ -106,7 +106,7 @@ All earthquakes and all major M4.5+ earthquakes occurring in the past 7-days can
 
 ### 2023 Southern Turkey Earthquake
 
-On February 6, 2023 (UTC) a major earthquake was recorded around the southern part of Turkey. The epicenter of the quake was about 26 km east of Nurdağı, Turkey, and the powerful and shallow quake severely devastated the southern areas of Turkey. More detailed information about the M7.8 earthquake that struck the southern areas of Turkey in early February 2023 can also be found in [USGS.gov news](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye).
+On February 6, 2023 (UTC) a major earthquake was recorded around the southern part of Turkey. The epicenter of the quake was about 26 km east of Nurdağı, Turkey, and the powerful and shallow quake severely devastated the southern areas of Turkey. More detailed information about the M7.8 earthquake that struck the southern areas of Turkey in early February 2023 can also be found in [USGS.gov featured story about Turkey earthquake](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye).
 
 - Magnitude at the epicenter: **M7.8**
 - Location: about 26 km east of Nurdağı, **Turkey**
@@ -126,7 +126,7 @@ Fig. 5&ndash;6 illustrate when both `Tectonic Plates` and `M4.5+ Past 7-Days` ov
 
 ### 2023 Western Morocco Earthquake
 
-On September 8, 2023 (UTC) another devastating earthquake was recorded around the western part of Morocco. The epicenter of the quake was about 18 km west/southwest of Oukaïmedene, Morocco. Although the magnitude scale of this M6.8 quake was not as bad as that of the southern Turkey earthquake, the strong and shallow quake again caused severe damage and death toll throughout the southwest region of Morocco. More detailed information about the M6.8 earthquake that hit the western/southwestern region of Morocco in early September 2023 can also be found in [USGS.gov news](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco).
+On September 8, 2023 (UTC) another devastating earthquake was recorded around the western part of Morocco. The epicenter of the quake was about 18 km west/southwest of Oukaïmedene, Morocco. Although the magnitude scale of this M6.8 quake was not as bad as that of the southern Turkey earthquake, the strong and shallow quake again caused severe damage and death toll throughout the southwest region of Morocco. More detailed information about the M6.8 earthquake that hit the western/southwestern region of Morocco in early September 2023 can also be found in [USGS.gov featured story about Morocco earthquake](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco).
 
 - Magnitude at the epicenter: **M6.8**
 - Location: about 54 km west/southwest of Oukaïmedene, **Morocco** (southwest of Marrakesh/Marrakech)
