@@ -2,56 +2,56 @@
 // Add console.log to check to see if our code is working.
 console.log("working");
 
-// We create the tile layer that will be the default background of our map.
+// Create the tile layer that will be the default background of our map.
 let streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/streets-v12',
   maxZoom: 18,
   accessToken: API_KEY
 });
-// We create the outdoors view tile layer that will be an option for our map.
+// Create the outdoors view tile layer that will be an option for our map.
 let outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/outdoors-v12',
   maxZoom: 18,
   accessToken: API_KEY
 });
-// We create the light view tile layer that will be an option for our map.
+// Create the light view tile layer that will be an option for our map.
 let light = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/light-v11',
   maxZoom: 18,
   accessToken: API_KEY
 });
-// We create the dark view tile layer that will be an option for our map.
+// Create the dark view tile layer that will be an option for our map.
 let dark = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/dark-v11',
   maxZoom: 18,
   accessToken: API_KEY
 });
-// We create the satellite view tile layer that will be an option for our map.
+// Create the satellite view tile layer that will be an option for our map.
 let sat = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/satellite-v9',
   maxZoom: 18,
   accessToken: API_KEY
 });
-// We create the satellite-streets view tile layer that will be an option for our map.
+// Create the satellite-streets view tile layer that will be an option for our map.
 let satStreets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/satellite-streets-v12',
   maxZoom: 18,
   accessToken: API_KEY
 });
-// We create the navigation view tile layer that will be an option for our map.
+// Create the navigation view tile layer that will be an option for our map.
 let navi = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/navigation-day-v1',
   maxZoom: 18,
   accessToken: API_KEY
 });
-// We create the navigation-night view tile layer that will be an option for our map.
+// Create the navigation-night view tile layer that will be an option for our map.
 let naviNight = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/navigation-night-v1',
@@ -151,7 +151,7 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geo
     },
     // We set the style for each circleMarker using our styleInfo function.
     style: styleInfo,
-    // We create a popup for each circleMarker to display the magnitude and
+    // Create a popup for each circleMarker to display the magnitude and
     // location of the earthquake after the marker has been created and styled.
     onEachFeature: function(feature, layer) {
       layer.bindPopup(
@@ -170,10 +170,10 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geo
   // We pass the magnitude of the earthquake into two functions to calculate the color and radius.
   function styleInfo(feature) {
     return {
-      opacity: 1,
-      fillOpacity: 1,
+      opacity: 0.6,
+      fillOpacity: 0.6,
       fillColor: getColor(feature.properties.mag),
-      color: '#000000',
+      color: getColor(feature.properties.mag),
       radius: getRadius(feature.properties.mag),
       stroke: true,
       weight: 0.5
@@ -204,7 +204,7 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geo
     },
     // We set the style for each circleMarker using our styleInfo function.
     style: styleInfo,
-    // We create a popup for each circleMarker to display the magnitude and
+    // Create a popup for each circleMarker to display the magnitude and
     // location of the earthquake after the marker has been created and styled.
     onEachFeature: function(feature, layer) {
       layer.bindPopup(
@@ -223,10 +223,10 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   // We pass the magnitude of the earthquake into two functions to calculate the color and radius.
   function styleInfo(feature) {
     return {
-      opacity: 1,
-      fillOpacity: 1,
+      opacity: 0.4,
+      fillOpacity: 0.4,
       fillColor: getColor(feature.properties.mag),
-      color: '#000000',
+      color: getColor(feature.properties.mag),
       radius: getRadius(feature.properties.mag),
       stroke: true,
       weight: 0.5
@@ -261,11 +261,12 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     },
     // We set the style for each circleMarker using our styleInfo function.
     style: styleInfo,
-    // We create a popup for each circleMarker to display the magnitude and
+    // Create a popup for each circleMarker to display the magnitude and
     // location of the earthquake after the marker has been created and styled.
     onEachFeature: function(feature, layer) {
       layer.bindPopup(
-        "Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place + "<br>Depth: " + feature.geometry.coordinates[2] + " km"
+        "Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place + "<br>Depth: " + feature.geometry.coordinates[2] + " km" +
+        "<br>Date: " + new Date(feature.properties.time).toISOString().substring(0, 19)
       );
     }
   }).addTo(allEQ7Days);
@@ -280,13 +281,13 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geoj
   // We pass the magnitude of the earthquake into two functions to calculate the color and radius.
   function styleInfo(feature) {
     return {
-      opacity: 1,
-      fillOpacity: 1,
+      opacity: 0.6,
+      fillOpacity: 0.6,
       fillColor: getColor(feature.properties.mag),
-      color: '#000000',
+      color: getColor(feature.properties.mag),
       radius: getRadius(feature.properties.mag),
       stroke: true,
-      weight: 0.5
+      weight: 2
     };
   }
 
@@ -314,7 +315,7 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geoj
     },
     // We set the style for each circleMarker using our styleInfo function.
     style: styleInfo,
-    // We create a popup for each circleMarker to display the magnitude and
+    // Create a popup for each circleMarker to display the magnitude and
     // location of the earthquake after the marker has been created and styled.
     onEachFeature: function(feature, layer) {
       layer.bindPopup(

@@ -15,6 +15,8 @@ This project focused on the application of web designing and visualization softw
 - [Future Work](#future-work)
   - [2023 Southern Turkey Earthquake](#2023-southern-turkey-earthquake)
   - [2023 Western Morocco Earthquake](#2023-western-morocco-earthquake)
+  - [2024 Eastern Taiwan Earthquake](#2024-eastern-taiwan-earthquake)
+  - [2025 Burma (Myanmar) Earthquake](#2025-burma-myanmar-earthquake)
 - [References](#references)
 
 ## Overview of Project
@@ -106,46 +108,89 @@ All earthquakes and all major M4.5+ earthquakes occurring in the past 7-days can
 
 ### 2023 Southern Turkey Earthquake
 
-On February 6, 2023 (UTC) a major earthquake was recorded around the southern part of Turkey. The epicenter of the quake was about 26 km east of Nurdağı, Turkey, and the powerful and shallow quake severely devastated the southern areas of Turkey. More detailed information about the M7.8 earthquake that struck the southern areas of Turkey in early February 2023 can also be found in [USGS.gov featured story about Turkey earthquake](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye).
+On February 6, 2023 (UTC) a major M7.8 earthquake was recorded around the southern part of Turkey. The epicenter of the quake was about 26 km east of Nurdağı, Turkey, and the powerful and shallow quake severely devastated the southern areas of Turkey and the northwestern part of Syria. More detailed information about the M7.8 earthquake that struck the southern areas of Turkey in early February 2023 can be found in [USGS.gov featured story about the powerful Turkey earthquake](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye).
 
 - Magnitude at the epicenter: **M7.8**
 - Location: about 26 km east of Nurdağı, **Turkey**
 - Depth of the epicenter: about **17.925 km**
 - Date/Time: February 6, 2023, around 01:17:35 UTC
+- Casualties: more than 60000 killed and 121000 injured/missing (source: [Wikipedia](https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquakes))
 
 ![Fig. 5](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days20230207.png)  
-**Fig. 5 Mapping major earthquakes that were recorded in the past 7 days and displayed on the `Streets` background.**
+**Fig. 5 Mapping major earthquakes that were recorded in the past 7 days after Feb 6, 2023 and displayed on the `Streets` background.**
 
 ![Fig. 6](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days20230220.png)  
-**Fig. 6 Mapping major aftershocks that were recorded in the past 7 days and displayed on the `Satellite-Streets` background.**
+**Fig. 6 Mapping major aftershocks following the major earthquake on Feb 6, 2023 and displayed on the `Satellite-Streets` background.**
 
-Fig. 5&ndash;6 illustrate when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on a specified background map.
+Fig. 5&ndash;6 illustrate the recorded strong earthquakes when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on a specified background map.
 
-- Fig. 5 shows the heartbreaking and devastating earthquake of M7.8 that struck Turkey on February 6, 2023 at around 01:17:35 UTC.
-- Fig. 6 shows the devastating aftershock of M6.3 that subsequently struck the southern Turkey areas on February 20, 2023 at 17:04:29 UTC.
+- Fig. 5 shows the devastating earthquake of M7.8 that struck Turkey on February 6, 2023 at around 01:17:35 UTC.
+- Fig. 6 shows multiple powerful aftershocks, including a M6.3 aftershock that subsequently struck the southern Turkey areas on February 20, 2023 at 17:04:29 UTC.
 
 ### 2023 Western Morocco Earthquake
 
-On September 8, 2023 (UTC) another devastating earthquake was recorded around the western part of Morocco. The epicenter of the quake was about 18 km west/southwest of Oukaïmedene, Morocco. Although the magnitude scale of this M6.8 quake was not as bad as that of the southern Turkey earthquake, the strong and shallow quake again caused severe damage and death toll throughout the southwest region of Morocco. More detailed information about the M6.8 earthquake that hit the western/southwestern region of Morocco in early September 2023 can also be found in [USGS.gov featured story about Morocco earthquake](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco).
+On September 8, 2023 (UTC) another devastating M6.8 earthquake was recorded around the western part of Morocco. The epicenter of the quake was about 18 km west/southwest of Oukaïmedene, Morocco. Although the magnitude scale of this M6.8 quake was not as bad as that of the southern Turkey earthquake, the strong and shallow quake again caused severe damage and death toll throughout the southwest region of Morocco. More detailed information about the M6.8 earthquake that hit the western/southwestern region of Morocco in early September 2023 can also be found in [USGS.gov featured story about the strong Morocco earthquake](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco).
 
 - Magnitude at the epicenter: **M6.8**
 - Location: about 54 km west/southwest of Oukaïmedene, **Morocco** (southwest of Marrakesh/Marrakech)
 - Depth of the epicenter: **about 18 km**
 - Date/Time: September 8, 2023, around 22:11:01 UTC
+- Casualties: more than 2900 killed and 5600 injured (source: [Brittanica](https://www.britannica.com/event/Morocco-earthquake-of-2023))
 
 ![Fig. 7](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days20230915.png)  
-**Fig. 7 Mapping major earthquakes that were recorded in the past 7 days and displayed on the `Streets` background.**
+**Fig. 7 Mapping major earthquakes that were recorded in the past 7 days after Sep 8, 2023 and displayed on the `Streets` background.**
 
 <hr>
 <table><tr><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days202309082211.png' title='(a) Epicenter of the M6.8 earthquake'></td><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days202309082230.png' title='(b) Aftershock of M4.9'></td><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days202309140553.png' title='(c) Aftershock of M4.6'></td></tr></table>
 
-**Fig. 8 From left to right: (a) Epicenter of the major M6.8 earthquake that struck the western part of Morocco, (b&ndash;c) Mapping major aftershocks of magnitude scale &gt; M4.5 that were recorded in the past 7 days and displayed on the `Satellite-Streets` background.**
+**Fig. 8 From left to right: (a) Epicenter of the major M6.8 earthquake that struck the western part of Morocco, (b&ndash;c) Mapping major aftershocks of magnitude scale &gt; M4.5 that were recorded in the past 7 days on Sep 8-14, 2023 and displayed on the `Satellite-Streets` background.**
 <hr>
 
-Fig. 7&ndash;8 illustrate when both `Tectonic Plates`, `Major Earthquakes`, `M4.5+ Past 7-Days` and `Earthquakes Past 7-Days` overlays were selected and displayed on a specified background map.
+Fig. 7&ndash;8 illustrate the recorded strong earthquakes when `Tectonic Plates`, `Major Earthquakes`, `M4.5+ Past 7-Days` and `Earthquakes Past 7-Days` overlays were selected and displayed on a specified background map.
 
 - Fig. 7 shows the shallow and devastating earthquake of M6.8 that struck Morocco on September 8, 2023 at around 22:11:01 UTC.
-- Fig. 8 shows several aftershocks of magnitude scale &gt; M4.5 that subsequently rocked western/southwestern Morocco on Feb 8, 2023 at 22:30:42 UTC and Feb 14, 2023 at 05:53:16 UTC.
+- Fig. 8 shows several aftershocks of magnitude scale &gt; M4.5 that subsequently rocked western/southwestern Morocco on September 8, 2023 at 22:30:42 UTC and September 14, 2023 at 05:53:16 UTC.
+
+### 2024 Eastern Taiwan Earthquake
+
+On April 3, 2024 (UTC) a devastating M7.4 earthquake was recorded around the eastern coastal area of Taiwan. The epicenter of the quake was about 18 km south/southwest of Hualien City (花蓮市), Taiwan. More detailed information about the M7.4 earthquake that hit the eastern Taiwan in early April 2024 can also be found in [USGS.gov featured story about the eastern Taiwan earthquake](https://www.usgs.gov/news/featured-story/strong-quake-and-aftershocks-rattle-eastern-taiwan).
+
+- Magnitude at the epicenter: **M7.4**
+- Location: about 18 km south/southwest of Hualien City (花蓮市), **Taiwan** (east coast of Taiwan facing the Pacific Ocean)
+- Depth of the epicenter: **about 34.75 km**
+- Date/Time: April 3, 2024, around 23:58:11 UTC
+- Casualties: more than 19 killed and 1100 injured (source: [Wikipedia](https://en.wikipedia.org/wiki/2024_Hualien_earthquake))
+
+<hr>
+<table><tr><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20240403zoom.png' title='(a) Epicenter of the M7.4 earthquake'></td><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20240403zoomnavi.png' title='(b) M7.4 earthquake & multiple aftershocks (Navi)'></td></tr></table>
+
+**Fig. 8 From left to right: (a) Epicenter of the major M7.4 earthquake that struck the eastern coastal area of Taiwan near Hualien City, (b) Mapping major earthquakes of magnitude scale &gt; M4.5 that were recorded in the past 7 days after Apr 3, 2024 near the epicenter and displayed on the `Navigation` background.**
+<hr>
+
+Fig. 8 illustrates the recorded strong earthquake of M7.4 and multiple aftershocks when `Tectonic Plates` and `Major Earthquakes` or `M4.5+ Past 7-Days` overlays were selected and displayed on a specified background map.
+
+### 2025 Burma (Myanmar) Earthquake
+
+On March 28, 2025 (UTC) devastating M7.7 earthquake and M6.7 aftershock were recorded near Myanmar's 2<sup>nd</sup> largest city, Mandalay. The epicenter of the powerful quake was about 16 km west of Mandalay City, Myanmar. More detailed information about the M7.7 earthquake that struck Myanmar on March 28, 2025 can also be found in [USGS.gov M 7.7 - 2025 Mandalay, Burma (Myanmar) Earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/us7000pn9s/executive).
+
+- Magnitude at the epicenter: **M7.7**
+- Location: about 16 km west of Mandalay, **Burma (Myanmar)**
+- Depth of the epicenter: **about 10 km**
+- Date/Time: March 28, 2025, around 06:20:52 UTC
+
+![Fig. 9](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20250328.png)  
+**Fig. 9 Mapping major earthquakes that were recorded in the past 7 days after Mar 28, 2025 and displayed on the `Streets` background.**
+
+<hr>
+<table><tr><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20250328zoomSatellite.png' title='(a) Epicenter of the M7.7 earthquake'></td><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20250328zoomSatellite67.png' title='(b) Aftershock of M6.7'></td></tr></table>
+
+**Fig. 10 From left to right: (a) Epicenter of the devastating M7.7 earthquake that struck Myanmar near Mandalay City, (b) Mapping major earthquakes of magnitude scale &gt; M4.5 that were recorded in the past 7 days near the epicenter and displayed on the `Satellite-Streets` background.**
+<hr>
+
+Fig. 9&ndash;10 illustrate the powerful earthquakes when `Tectonic Plates`, `Major Earthquakes`, `M4.5+ Past 7-Days` or `Earthquakes Past 7-Days` overlays were selected and displayed on a specified background map.
+
+- Fig. 9 shows the shallow and devastating earthquake of M7.7 that struck Myanmar on March 28, 2025 at around 06:20:52 UTC.
+- Fig. 10 shows several aftershocks of magnitude scale &gt; M4.5, including a strong M6.7 aftershock that subsequently rocked about 11 minutes following the M7.7 quake the damaged areas near Mandalay City, Myanmar on March 28, 2025. 
 
 ## References
 
@@ -161,3 +206,5 @@ Fig. 7&ndash;8 illustrate when both `Tectonic Plates`, `Major Earthquakes`, `M4.
 [USGS FAQs](https://www.usgs.gov/faqs/where-do-earthquakes-occur)  
 [USGS.gov featured story about Turkey earthquake](https://www.usgs.gov/news/featured-story/m78-and-m75-kahramanmaras-earthquake-sequence-near-nurdagi-turkey-turkiye)  
 [USGS.gov featured story about Morocco earthquake](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco)  
+[USGS.gov featured story about the eastern Taiwan earthquake](https://www.usgs.gov/news/featured-story/strong-quake-and-aftershocks-rattle-eastern-taiwan)  
+[USGS.gov M 7.7 - 2025 Mandalay, Burma (Myanmar) Earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/us7000pn9s/executive)  
