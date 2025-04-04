@@ -162,7 +162,7 @@ On April 3, 2024 (UTC) a devastating M7.4 earthquake was recorded around the eas
 - Casualties: more than 19 killed and 1100 injured (source: [Wikipedia](https://en.wikipedia.org/wiki/2024_Hualien_earthquake))
 
 <hr>
-<table><tr><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20240403zoom.png' title='(a) Epicenter of the M7.4 earthquake'></td><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20240403zoomnavi.png' title='(b) M7.4 earthquake & multiple aftershocks (Navi)'></td></tr></table>
+<table><tr><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20240403zoom.png' title='(a) Epicenter of the M7.4 earthquake'></td><td><img src='./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_20240403zoomnavi.png' title='(b) M7.4 earthquake and multiple aftershocks (Navi)'></td></tr></table>
 
 **Fig. 8 From left to right: (a) Epicenter of the major M7.4 earthquake that struck the eastern coastal area of Taiwan near Hualien City, (b) Mapping major earthquakes of magnitude scale &gt; M4.5 that were recorded in the past 7 days after Apr 3, 2024 near the epicenter and displayed on the `Navigation` background.**
 <hr>
