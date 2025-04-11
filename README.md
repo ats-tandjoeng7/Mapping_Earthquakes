@@ -45,7 +45,7 @@ By using several web designing tools, such as HTML, CSS, JavaScript, Leaflet, Ma
 
 ### Customization and Optimization
 
-The refactored JS code and screenshots of our webpage can be referred in [challenge_logic.js](./Earthquake_Challenge/static/js/challenge_logic.js) and Fig. 1&ndash;4. Some optimized settings, simplified variable definitions, and efficient functions that I used for mapping earthquakes efficiently are summarized below.
+The refactored JS code and screenshots of our webpage can be referred in [challenge_logic.js](./Earthquake_Challenge/static/js/challenge_logic.js) and Figs. 1&ndash;4. Some optimized settings, simplified variable definitions, and efficient functions that I used for mapping earthquakes efficiently are summarized below.
 
 - common color settings and ternary operators for both legend and marker based on magnitude were used instead of setting them manually, which saved at least 10 lines of coding while maintaining our high quality deliverables, for instance:
 
@@ -122,7 +122,7 @@ On February 6, 2023 (UTC) a major M7.8 earthquake was recorded around the southe
 ![Fig. 6](./Earthquake_Challenge/static/images/Mapping_Earthquakes_majorEQ_Past7Days20230220.png)  
 **Fig. 6 Mapping major aftershocks following the major earthquake on Feb 6, 2023 and displayed on the `Satellite-Streets` background.**
 
-Fig. 5&ndash;6 illustrate the recorded strong earthquakes when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on a specified background map.
+Figs. 5&ndash;6 illustrate the recorded strong earthquakes when both `Tectonic Plates` and `M4.5+ Past 7-Days` overlays were selected and displayed on a specified background map.
 
 - Fig. 5 shows the devastating earthquake of M7.8 that struck Turkey on February 6, 2023 at around 01:17:35 UTC.
 - Fig. 6 shows multiple powerful aftershocks, including a M6.3 aftershock that subsequently struck the southern Turkey areas on February 20, 2023 at 17:04:29 UTC.
@@ -146,7 +146,7 @@ On September 8, 2023 (UTC) another devastating M6.8 earthquake was recorded arou
 **Fig. 8 From left to right: (a) Epicenter of the major M6.8 earthquake that struck the western part of Morocco, (b&ndash;c) Mapping major aftershocks of magnitude scale &gt; M4.5 that were recorded in the past 7 days on Sep 8-14, 2023 and displayed on the `Satellite-Streets` background.**
 <hr>
 
-Fig. 7&ndash;8 illustrate the recorded strong earthquakes when `Tectonic Plates`, `Major Earthquakes`, `M4.5+ Past 7-Days` and `Earthquakes Past 7-Days` overlays were selected and displayed on a specified background map.
+Figs. 7&ndash;8 illustrate the recorded strong earthquakes when `Tectonic Plates`, `Major Earthquakes`, `M4.5+ Past 7-Days` and `Earthquakes Past 7-Days` overlays were selected and displayed on a specified background map.
 
 - Fig. 7 shows the shallow and devastating earthquake of M6.8 that struck Morocco on September 8, 2023 at around 22:11:01 UTC.
 - Fig. 8 shows several aftershocks of magnitude scale &gt; M4.5 that subsequently rocked western/southwestern Morocco on September 8, 2023 at 22:30:42 UTC and September 14, 2023 at 05:53:16 UTC.
@@ -187,7 +187,7 @@ On March 28, 2025 (UTC) devastating M7.7 earthquake and M6.7 aftershock were rec
 **Fig. 10 From left to right: (a) Epicenter of the devastating M7.7 earthquake that struck Myanmar near Mandalay City, (b) Mapping major earthquakes of magnitude scale &gt; M4.5 that were recorded in the past 7 days near the epicenter and displayed on the `Satellite-Streets` background.**
 <hr>
 
-Fig. 9&ndash;10 illustrate the powerful earthquakes when `Tectonic Plates`, `Major Earthquakes`, `M4.5+ Past 7-Days` or `Earthquakes Past 7-Days` overlays were selected and displayed on a specified background map.
+Figs. 9&ndash;10 illustrate the powerful earthquakes when `Tectonic Plates`, `Major Earthquakes`, `M4.5+ Past 7-Days` or `Earthquakes Past 7-Days` overlays were selected and displayed on a specified background map.
 
 - Fig. 9 shows the shallow and devastating earthquake of M7.7 that struck Myanmar on March 28, 2025 at around 06:20:52 UTC.
 - Fig. 10 shows several aftershocks of magnitude scale &gt; M4.5, including a strong M6.7 aftershock that subsequently rocked about 11 minutes following the M7.7 quake the damaged areas near Mandalay City, Myanmar on March 28, 2025. 
@@ -208,3 +208,4 @@ Fig. 9&ndash;10 illustrate the powerful earthquakes when `Tectonic Plates`, `Maj
 [USGS.gov featured story about Morocco earthquake](https://www.usgs.gov/news/featured-story/major-earthquake-strikes-oukaimedene-morocco)  
 [USGS.gov featured story about the eastern Taiwan earthquake](https://www.usgs.gov/news/featured-story/strong-quake-and-aftershocks-rattle-eastern-taiwan)  
 [USGS.gov M 7.7 - 2025 Mandalay, Burma (Myanmar) Earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/us7000pn9s/executive)  
+ 
